@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/https//aravinth-webdev.github.io/portfolio/static/css/main.0d367195.css",
+    "main.js": "/https//aravinth-webdev.github.io/portfolio/static/js/main.1a8a95a8.js",
+    "static/media/web (1).jpg": "/https//aravinth-webdev.github.io/portfolio/static/media/web (1).feb81a499ae3fa48b813.jpg",
+    "index.html": "/https//aravinth-webdev.github.io/portfolio/index.html",
+    "main.0d367195.css.map": "/https//aravinth-webdev.github.io/portfolio/static/css/main.0d367195.css.map",
+    "main.1a8a95a8.js.map": "/https//aravinth-webdev.github.io/portfolio/static/js/main.1a8a95a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d367195.css",
+    "static/js/main.1a8a95a8.js"
+  ]
+}
