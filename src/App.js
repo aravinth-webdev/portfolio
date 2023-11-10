@@ -23,8 +23,8 @@ let Card = Mydata.map((item)=>{
         hse={item.education.hse}
         sslc={item.education.sslc}/>
         <Experience
-        course={item.course}
-        project={item.project}
+        course={item.course.toUpperCase()}
+        project={item.project.toUpperCase()}
         tools={item.tools}
         reactproject={item.portfoliopro.toUpperCase()}/>
         <Contact/>
@@ -41,7 +41,7 @@ return ( <div>
     </div>
 )}
 
-let time= new Date().toLocaleTimeString()
+let time= new Date().toLocaleTimeString().charAt(0)
 let AM=new Date().toLocaleString().includes("A")
 
 let PM=new Date().toLocaleString().includes("P")

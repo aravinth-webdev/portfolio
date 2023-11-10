@@ -310,11 +310,11 @@ font-family: 'Courier New', Courier, monospace;
   animation-iteration-count: infinite;
 }
 @keyframes contact {
-      50%{
+      40%{
         transform:rotate(10deg);
         color: azure;
       }
-      50%{
+      40%{
         transform: rotate(-10deg);
         color:rgb(17, 49, 49);
       }
@@ -396,7 +396,7 @@ padding: 10px 40px;
   color:aqua; 
 }
 
-@media only screen and (min-width:350px){
+@media only screen and (max-width:400px){
   body{
     width: fit-content;
     height:fit-content;
@@ -411,9 +411,9 @@ padding: 10px 40px;
     height:fit-content;
     width: fit-content;
   }
-  /* #profile>img{
+  #profile>img{
     width:fit-content;
-  } */
+  }
   #career>p{
     width: fit-content;
 
