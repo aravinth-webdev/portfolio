@@ -25,12 +25,14 @@ let Card = Mydata.map((item)=>{
         <Experience
         course={item.course}
         project={item.project}
-        tools={item.tools}/>
+        tools={item.tools}
+        reactproject={item.portfoliopro.toUpperCase()}/>
         <Contact/>
-        <Aboutus service1={item.service1}
-        service2={item.service2}
-        service3={item.service3}
-        service4={item.service4}/>
+        <Aboutus service1={item.service1.toUpperCase()}
+        service2={item.service2.toUpperCase()}
+        service3={item.service3.toUpperCase()}
+        service4={item.service4.toUpperCase()}
+        />
         </div>
 })
 return ( <div>
@@ -39,14 +41,12 @@ return ( <div>
     </div>
 )}
 
-let time= new Date().getHours()
-let a=time.toLocaleString()
-
+let time= new Date().toLocaleTimeString()
 let AM=new Date().toLocaleString().includes("A")
 
 let PM=new Date().toLocaleString().includes("P")
 
-
+console.log(time)
 
    function Nav(){
        
@@ -77,7 +77,7 @@ function Main(props){
       if((x>=5 && x<12) && y==true){
         return `"RISH AND SHINE"`
       }
-      else if((x>=12 && x<5) && z==true){
+      else if( x<5 && z==true){
          return `"GREETINGS OF GOOD AFTERNOON"`
       }
       else if((x>=5 && x<9) && z==true){
@@ -90,7 +90,7 @@ function Main(props){
     return(
        <div>
        <div id="darkmode">
-       <p>{valid(a,AM,PM)}</p>
+       <p>{valid(time,AM,PM)}</p>
        <i class="fa-solid fa-circle-half-stroke" onClick={
          ()=>{
           faxclr(fax==="teal"?"black":"teal")
@@ -136,14 +136,11 @@ function Main(props){
        <div className="images">
        <img src="./html.png" width={"85"} height={"85"} alt="htmlskill"></img>
        <label className="skill-name">HTML 5</label>
-       <br></br>
        <img src="./css.png" width={"85"} height={"85"} alt="cssSkill"></img>
        <label className="skill-name">CSS 5</label>
-       <br></br>
        <img src="./java script.png" width={"85"} height={"85"} alt="cssSkill"></img>
        <label className="skill-name">ECMA SCRIPT</label>
 
-       <br></br>
        <img src="react.png" width={"85"} height={"85"} alt="reactskill"></img>
        <label className="skill-name">REACT JS</label>
        </div>
@@ -153,8 +150,10 @@ function Main(props){
        <label className="software">BACKEND DEVELOPMENT</label>
 
        <div className="images">
-       <img src="oracle.png" width={"90"} height={"85"} alt="oracleskill"></img>
-       <label className="skill-name">ORACLE SQL DATABASE</label>
+       <img src="./oracle.png" width={"90"} height={"85"} alt="oracleskill"></img>
+       <label className="skill-name">ORACLE SQL</label>
+       <img src="./java.png" width={"90"} height={"85"} alt="oracleskill"></img>
+       <label className="skill-name">JAVA</label>
        </div>     
        </div>
        <div className="skill-title">
@@ -229,6 +228,7 @@ function Main(props){
         <br></br>
          {props.tools}</p>
         </li>
+        <li>{props.reactproject}</li>
         </ul>
        </div>
        </div>
@@ -273,11 +273,11 @@ function Aboutus(props){
        <div className="address">
 
        <label>ADDRESS</label>
-       <p>Kannandheri village,
+       <p>KONGANAPURAM,
        <br></br>
-       salem(dt),
+       SALEM(DT) 637502.
        <br></br>
-       Tamilnadu.
+       TAMILNADU STATE.
        </p>
        </div>
        <div className="address">

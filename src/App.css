@@ -5,9 +5,9 @@
   scroll-behavior: smooth;
 }
 header{
-
    background-color: teal;
   border: 1px solid aqua;
+  height: fit-content;
 }
 nav{
   display: flex;
@@ -22,7 +22,7 @@ header>nav>img{
 }
 nav>ul>li>i{
 
-   padding:10px 40px;
+   padding:10px 50px;
    font-size: 15px;
    animation-name: navanime;
    animation-duration: 1.5s;
@@ -62,8 +62,9 @@ nav>i:active{
   background-color:rgba(7, 2, 2, 0.849);
   display: flex;
   font-size:20px;
-  height: 560px; 
-  gap: 2%;
+  /* height: 560px; */
+  height: fit-content; 
+  gap: 4%;
   border: 1px solid aqua;
  }
 #myname>h2{
@@ -85,9 +86,9 @@ nav>i:active{
   }
 #myname>h1{
   letter-spacing: 4px;
-  font-size: 34px;
+  font-size: 37px;
   padding: 10px 0px;
-   font-family:cursive;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #myname>label{
   letter-spacing: 2px;
@@ -99,8 +100,6 @@ nav>i:active{
   opacity:95%;
   width: 30%;
   height: 400px;
-  margin-left: -6%;
-  border-radius: 10px 10px;
 }
 #profile>img:hover{
   opacity:100%;
@@ -108,9 +107,9 @@ nav>i:active{
 }
 #myname>p{
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 17px;
   width: 90%;
-  color: aliceblue;
+  color:aqua;
   letter-spacing: 2px;
   font-family:'Courier New', Courier, monospace;
 }
@@ -174,12 +173,13 @@ height:fit-content;
   margin: 0px 0px 30px 0px;
   }
 #skill{
-  background-image: url(./web\ \(1\).jpg);
+  background-image: url(./web6.png);
   background-size:cover;
 }
 #skill>.skill-title{
   color: azure;
-  padding: 10px 20px;
+  padding: 10px 10px;
+
 }
 #education>h3{
     border: 1.5px solid aqua;
@@ -203,7 +203,7 @@ height:fit-content;
   text-wrap: wrap;
   color:skyblue;
   border: none;
-  padding: 8px 10px;
+  padding: 15px 10px;
   font-size: 16px;
   background-color:rgba(0, 0, 0, 0.678);
 }
@@ -216,25 +216,28 @@ height:fit-content;
 .software{
 color:wheat;
 text-wrap: wrap;
-padding: 8px 5px;
-background-color:rgb(43, 43, 58);
+padding: 8px 10px;
+background-color:black;
 font-size:16px;
+box-shadow: 0px 0px 2px 2px teal;
 letter-spacing: 2px;
 font-family: 'Courier New', Courier, monospace;
 }
 .images{
   width: fit-content;
   display: flex;
-  gap: 20px;
+  gap: 22px;
   flex-wrap: wrap;
-  margin: 30px 10px;
-  padding: 30px 30px;
+  margin: 30px 0px;
+  /* padding: 30px 30px; */
 }
 
 .images>img{
   border: 2px solid grey;
   border-radius: 50%;
   opacity: 100%;
+  
+  margin: 0px 10px;
 }
 .images>img:hover{
   transform: scale(0.9);
@@ -242,10 +245,12 @@ font-family: 'Courier New', Courier, monospace;
 }
 .skill-name{
   border: none;
-  padding: 6px 10px;
+  padding: 6px 8px;
   letter-spacing: 2px;
-  background-color:rgba(0, 0, 0, 0.623);
-  box-shadow: 0px 0px 2px 2px teal;
+  color:black;
+  background-color:aliceblue;
+  border-radius: 25px;
+  /* box-shadow: 0px 0px 2px 2px teal; */
   font-family: 'Courier New', Courier, monospace;
 }
 #knowledge>h3{
@@ -270,7 +275,6 @@ font-family: 'Courier New', Courier, monospace;
 letter-spacing: 2px;
 font-family: 'Courier New', Courier, monospace;
   padding: 20px 0px 20px 0px;
-  list-style:upper-roman;
 }
 .experience>ul>li>p{
   padding: 8px 8px;
@@ -392,13 +396,17 @@ padding: 10px 40px;
   color:aqua; 
 }
 
-@media only screen and (max-width:300px){
+@media only screen and (max-width:350px){
   body{
     width: fit-content;
     height:fit-content;
     box-sizing:content-box;
     flex-wrap: wrap;
   } 
+  #skill{
+    flex-wrap: wrap;
+  
+  }
 #profile{
     height:fit-content;
     width: fit-content;
