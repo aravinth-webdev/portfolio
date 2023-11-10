@@ -54,7 +54,7 @@ let PM=new Date().toLocaleString().includes("P")
      return(
        <header>
         <nav id="head">
-        <img src="myportfolio/logo.png" width={"6%"} height={"6%"} alt="logo"></img>
+        <img src="./logo2.png" width={"6%"} height={"6%"} alt="logo"></img>
         <ul>
         <li><i class="fa-solid fa-house"><a href="./App.js">HOME</a></i></li>
         <li><i class="fa-solid fa-address-card"><a href="#profile">ABOUT M E</a></i></li>
