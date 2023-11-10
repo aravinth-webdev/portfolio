@@ -14,7 +14,8 @@ let Card = Mydata.map((item)=>{
    summary={item.summary}
    />
    <Career title={item.title2}
-   para={item.career}/>
+   para={item.career.toUpperCase()}/>
+   <Skillset />
    <Education college={item.education.college}
        passout3={item.education.passout3}
        degree={item.education.degree}
@@ -25,7 +26,6 @@ let Card = Mydata.map((item)=>{
         course={item.course}
         project={item.project}
         tools={item.tools}/>
-        <Skillset />
         <Contact/>
         <Aboutus service1={item.service1}
         service2={item.service2}

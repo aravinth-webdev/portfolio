@@ -6,7 +6,7 @@ const Mydata=[
         fname:"ARAVINTH R",
         summary:"Java Fullstack developer with passion for coding and problem solving",                
         title2:"CAREER OBJECTIVE",
-        career:"As a newcomer to the corporate world, I am motivated to bringfresh perspectives and innovative ideas to the table. I am dedicated        to hone my skills, collaborating with colleagues, and adapting to Technologies.Grow both company and personally, and thrive in a collaborative work environment.",
+        career:"As a highly motivated and versatile Full Stack Developer, my career objective is to leverage my proficiency in both frontend and backend technologies to contribute to the creation of robust and user-centric web applications. With a solid foundation in frontend frameworks like React and expertise in backend technologies such as java and oracle sql database, I am committed to delivering seamless and scalable solutions.Seeking a dynamic work environment where I can apply my comprehensive skill set.",
         education:{
              college:"THE KAVERY ENGINEERING COLLEGE BY ANNA UNIVERSITY",
              passout3: 2019 - 2023,

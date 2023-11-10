@@ -154,10 +154,11 @@ height:fit-content;
   color:skyblue;
   background-color:rgba(0, 0, 0, 0.568);
   box-sizing: border-box;
-  width:fit-content;
-  letter-spacing:1px;
+  /* width:fit-content; */
+  letter-spacing:2px;
   text-indent: 0%;
   text-wrap: wrap;
+  flex-wrap: wrap;
   padding: 40px 10px 40px 10px;
 }
 
@@ -407,6 +408,7 @@ padding: 10px 40px;
   }
   #career>p{
     width: fit-content;
+
   }
 #head>img{
   width: 80px;
