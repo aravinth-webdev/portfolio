@@ -1,7 +1,6 @@
 
 import React from "react";
 import './App.css'
-import { ReactDOM } from "react";
 import Mydata from "./data";
 import { useState } from "react";
 
@@ -41,16 +40,15 @@ return ( <div>
     </div>
 )}
 
-let time= new Date().toLocaleTimeString().charAt(0)
-let AM=new Date().toLocaleString().includes("A")
+let time= new Date().getHours()
+// let AM=new Date().toLocaleString().includes("A")
 
-let PM=new Date().toLocaleString().includes("P")
+// let PM=new Date().toLocaleString().includes("P")
 
-console.log(time)
+// console.log(time)
 
    function Nav(){
        
-    let head=document.getElementById("head")
      return(
        <header>
         <nav id="head">
@@ -72,25 +70,27 @@ console.log(time)
 function Main(props){
    const [fax,faxclr] = useState("teal")
    const [color2,altclr2] = useState("white")
- 
-   function valid(x,y,z){
-      if((x>=5 && x<12) && y==true){
+
+   function valid(x){
+      if(x>=5 && x<12){
         return `"RISH AND SHINE"`
       }
-      else if( x<5 && z==true){
+      else if( x>=12 && x<18){
          return `"GREETINGS OF GOOD AFTERNOON"`
       }
-      else if((x>=5 && x<9) && z==true){
+      else if(x>=17 && x<20){
         return `"GREETINGS OF GOOD EVENING"`
       }
       else{
          return `"GREETINGS OF GOOD NIGHT"`
       }
       }
+
+
     return(
        <div>
        <div id="darkmode">
-       <p>{valid(time,AM,PM)}</p>
+       <p>{valid(time)}</p>
        <i class="fa-solid fa-circle-half-stroke" onClick={
          ()=>{
           faxclr(fax==="teal"?"black":"teal")
@@ -229,6 +229,7 @@ function Main(props){
          {props.tools}</p>
         </li>
         <li>{props.reactproject}</li>
+        <li><a href="https://github.com/aravinth-webdev">GIT-HUB</a></li>
         </ul>
        </div>
        </div>
@@ -288,6 +289,14 @@ function Aboutus(props){
        <li>{props.service3}</li>
        <li>{props.service4}</li>
        </ul>
+       </div>
+       <div className="address">
+       <label>MY RESUME</label><div id="resume">
+       <a href="./resumefile.pdf">
+       <img src="./resume.png" width={"150px"} height={"200px"}>     
+       </img>
+       </a>
+       </div>
        </div>
       </div>
    )
