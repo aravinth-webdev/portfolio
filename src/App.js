@@ -32,6 +32,7 @@ let Card = Mydata.map((item)=>{
         service3={item.service3.toUpperCase()}
         service4={item.service4.toUpperCase()}
         />
+        <Saythanks/>
         </div>
 })
 return ( <div>
@@ -297,30 +298,19 @@ function Aboutus(props){
        </img>
        </a>
        </div>
-       </div>
       </div>
-   )
+      </div>
+      )
 }
 
-   //  let observer=new IntersectionObserver(
+function Saythanks(){
+   return(
+      <div id="thanksmsg">
+      <div className="letters">
+      <h2>THANK YOU ! FOR VIEW MY PORTFOLIO<i class="fa-regular fa-handshake"></i></h2>
+      <label className="letters">Have a good day.......</label>
+      </div>
+      </div>
 
-//   (entries)=>{
-//     entries.forEach(x=>{
-//       console.log(x)
-//       if(x.isIntersecting){
-//         x.target.classList.add(".animate")
-//         console.log("hello")
-//       }
-//       else{
-//         x.target.classList.remove(".animate")
-//       }
-//     })
-//   },{threshold:0.5}
-// )
-//  let loop= document.querySelectorAll(".animate")
-//  for( let i=0 ;i<loop.length;i++){
-//   let elements=loop[i]
-//   console.log(elements)
-//   observer.observe(elements)
-// }
- 
+   )
+}

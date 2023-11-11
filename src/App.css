@@ -419,8 +419,30 @@ padding: 10px 40px;
   box-shadow: none;
   transform: scale(0.9);
   transition: all 0.2s;
-
 }
+#thanksmsg{
+  flex-wrap: wrap;
+  color: aliceblue;
+  /* margin-top: 2px; */
+  background-color:rgb(26, 37, 46);
+}
+.letters{
+  width: fit-content;
+  padding: 60px 0px;
+  letter-spacing: 3px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.letters>h2>i{
+  font-size: 30px;
+  color: palegoldenrod;
+}
+.letters>label{
+  padding: 7px 0px;
+}
+.letters>h2>i{
+  padding: 0px 0px 0px 10px;
+}
+
 
 @media only screen and (max-width:410px){
   body{
