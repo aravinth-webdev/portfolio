@@ -70,7 +70,7 @@ let time= new Date().getHours()
 function Main(props){
    const [fax,faxclr] = useState("teal")
    const [color2,altclr2] = useState("cornsilk")
-   const[black,blackclr]=useState("black")
+   const[black,blackclr]=useState("black") 
    const[cornsilk,cornsilkclr]=useState("cornsilk")
 
    function valid(x){
