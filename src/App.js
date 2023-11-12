@@ -139,16 +139,16 @@ function Main(props){
        <label className="software">FRONTEND DEVELOPMENT</label>
        <br></br>
        <div className="images">
-       <img src="./html.png" width={"95"} height={"95"} alt="htmlskill"></img>
+       <img src="./html.png" width={"105"} height={"105"} alt="htmlskill"></img>
        <label className="skill-name">HTML 5</label>
        <br></br>
-       <img src="./css.png" width={"95"} height={"95"} alt="cssSkill"></img>
+       <img src="./css.png" width={"105"} height={"105"} alt="cssSkill"></img>
        <label className="skill-name">CSS 5</label>
        <br></br>
-       <img src="./java script.png" width={"95"} height={"95"} alt="cssSkill"></img>
+       <img src="./java script.png" width={"105"} height={"105"} alt="cssSkill"></img>
        <label className="skill-name">ECMA SCRIPT</label>
        <br></br>
-       <img src="react.png" width={"95"} height={"95"} alt="reactskill"></img>
+       <img src="react.png" width={"105"} height={"105"} alt="reactskill"></img>
        <label className="skill-name">REACT JS</label>
        <br></br>
        </div>
@@ -158,10 +158,10 @@ function Main(props){
        <label className="software">BACKEND DEVELOPMENT</label>
 
        <div className="images">
-       <img src="./oracle.png" width={"90"} height={"95"} alt="oracleskill"></img>
+       <img src="./oracle.png" width={"105"} height={"105"} alt="oracleskill"></img>
        <label className="skill-name">ORACLE SQL</label>
        <br></br>
-       <img src="./java.png" width={"90"} height={"95"} alt="oracleskill"></img>
+       <img src="./java.png" width={"105"} height={"105"} alt="oracleskill"></img>
        <label className="skill-name">JAVA</label>
        <br></br>
        </div>     
@@ -169,11 +169,11 @@ function Main(props){
        <div className="skill-title">
        <label className="software">TOOLS & TECHNOLOGIES</label>
        <div className="images" >
-       <img src="./git-hub.png" width={"95"}  height={"95"} alt="githubskill"></img>
+       <img src="./git-hub.png" width={"105"}  height={"105"} alt="githubskill"></img>
        <label className="skill-name">GIT-HUB</label>
 
        <br></br>
-       <img src="./vs code.png" width={"95"} height={"95"} alt="vscodeskill"></img>
+       <img src="./vs code.png" width={"105"} height={"105"} alt="vscodeskill"></img>
        <label className="skill-name">VS CODE</label>
        </div>
        </div>
@@ -239,7 +239,7 @@ function Main(props){
          {props.tools}</p>
         </li>
         <li>{props.reactproject}</li>
-        <li><a href="https://github.com/aravinth-webdev">GIT-HUB</a></li>
+        <li><a>GIT-HUB</a></li>
         </ul>
        </div>
        </div>
