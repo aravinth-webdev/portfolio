@@ -36,7 +36,6 @@ let Card = Mydata.map((item)=>{
         </div>
 })
 return ( <div>
-    <Nav/>
     {Card}
     </div>
 )}
@@ -48,10 +47,10 @@ let time= new Date().getHours()
 
 // console.log(time)
 
-   function Nav(){
+   function Nav(props){
        
      return(
-       <header>
+       <header style={{backgroundColor:props.style2}}>
         <nav id="head">
         <img src="./logo2.png" width={"6%"} height={"6%"} alt="logo"></img>
         <ul>
@@ -70,7 +69,9 @@ let time= new Date().getHours()
 
 function Main(props){
    const [fax,faxclr] = useState("teal")
-   const [color2,altclr2] = useState("white")
+   const [color2,altclr2] = useState("cornsilk")
+   const[black,blackclr]=useState("black")
+   const[cornsilk,cornsilkclr]=useState("cornsilk")
 
    function valid(x){
       if(x>=5 && x<12){
@@ -90,17 +91,20 @@ function Main(props){
 
     return(
        <div>
-       <div id="darkmode">
+       <Nav style2={fax} />
+       <div id="darkmode" style={{backgroundColor:black,color:cornsilk}}>
        <p>{valid(time)}</p>
        <i class="fa-solid fa-circle-half-stroke" onClick={
          ()=>{
           faxclr(fax==="teal"?"black":"teal")
-          altclr2(color2=="white"?"aqua":"white")
+          altclr2(color2=="cornsilk"?"aqua":"cornsilk")
+          blackclr(black=="black"?"cornsilk":"black")
+          cornsilkclr(cornsilk=="cornsilk"?"black":"cornsilk")
          } 
       
       }></i></div>
        <div id="profile" style={{backgroundColor:fax}}>
-       <div id="myname" style={{color:"white"}}>
+       <div id="myname" style={{color:"cornsilk"}}>
         <h3 style={{backgroundColor:color2}}>ABOUT ME</h3>
        <h2>I'm</h2>
        <h1 style={{color:color2}}>{props.fname}</h1>
@@ -137,13 +141,16 @@ function Main(props){
        <div className="images">
        <img src="./html.png" width={"85"} height={"85"} alt="htmlskill"></img>
        <label className="skill-name">HTML 5</label>
+       <br></br>
        <img src="./css.png" width={"85"} height={"85"} alt="cssSkill"></img>
        <label className="skill-name">CSS 5</label>
+       <br></br>
        <img src="./java script.png" width={"85"} height={"85"} alt="cssSkill"></img>
        <label className="skill-name">ECMA SCRIPT</label>
-
+       <br></br>
        <img src="react.png" width={"85"} height={"85"} alt="reactskill"></img>
        <label className="skill-name">REACT JS</label>
+       <br></br>
        </div>
        </div>   
 
@@ -153,8 +160,10 @@ function Main(props){
        <div className="images">
        <img src="./oracle.png" width={"90"} height={"85"} alt="oracleskill"></img>
        <label className="skill-name">ORACLE SQL</label>
+       <br></br>
        <img src="./java.png" width={"90"} height={"85"} alt="oracleskill"></img>
        <label className="skill-name">JAVA</label>
+       <br></br>
        </div>     
        </div>
        <div className="skill-title">
@@ -307,7 +316,7 @@ function Saythanks(){
    return(
       <div id="thanksmsg">
       <div className="letters">
-      <h2>THANK YOU ! FOR VIEW MY PORTFOLIO<i class="fa-regular fa-handshake"></i></h2>
+      <h2>THANK YOU! FOR VIEW MY PORTFOLIO<i class="fa-regular fa-handshake"></i></h2>
       <label className="letters">Have a good day.......</label>
       </div>
       </div>
