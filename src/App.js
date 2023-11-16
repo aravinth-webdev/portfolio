@@ -80,7 +80,7 @@ function Main(props){
       else if( x>=12 && x<18){
          return `"GREETINGS OF GOOD AFTERNOON"`
       }
-      else if(x>=17 && x<20){
+      else if(x>=18 && x<20){
         return `"GREETINGS OF GOOD EVENING"`
       }
       else{
