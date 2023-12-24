@@ -352,6 +352,8 @@ font-family: 'Courier New', Courier, monospace;
   color:dodgerblue;
 }
 #footer{
+  /* background-image: url(./PNC-Animated-Banners.gif); */
+  background-size:cover;
   color:palegoldenrod;
   flex-wrap: wrap;
   padding: 20px 0px;
