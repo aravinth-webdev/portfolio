@@ -297,7 +297,7 @@ function Aboutus(props){
        </div>
        <div className="address">
        <label>MY RESUME</label><div id="resume">
-       <a href="./resume3.pdf">
+       <a href="./resume.pdf">
        <img src="./resume.png" width={"150px"} height={"200px"}>     
        </img>
        </a>
