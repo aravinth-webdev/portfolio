@@ -41,11 +41,6 @@ return ( <div>
 )}
 
 let time= new Date().getHours()
-// let AM=new Date().toLocaleString().includes("A")
-
-// let PM=new Date().toLocaleString().includes("P")
-
-// console.log(time)
 
    function Nav(props){
        
@@ -302,7 +297,7 @@ function Aboutus(props){
        </div>
        <div className="address">
        <label>MY RESUME</label><div id="resume">
-       <a href="./resumefile.pdf">
+       <a href="./resume3">
        <img src="./resume.png" width={"150px"} height={"200px"}>     
        </img>
        </a>
